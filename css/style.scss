@@ -1,0 +1,102 @@
+@import "reboot";
+@import "font";
+
+//variables
+$arsenal-color: #cd0c14;
+$aston-color:  #6b0019;
+$burnley-color:  #789ab2;
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+
+.camisetas {
+width: 100%;
+height: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 35%;
+background-position: 15% 200px;
+
+
+img {
+    float: right;
+    width: 450px;
+    margin-right: 10%;
+    margin-top: 10%;
+    
+    }
+
+}
+.escudo {
+    display: flex;
+align-items: center;
+
+img {
+    height: 70%;
+    margin: 10px 20px 10px 50px;
+
+}
+h2 {
+    font-family: suecaslabmedium, Georgia;
+    font-size: 30px;
+}
+
+}
+
+
+h2#arsenal {
+    color: $arsenal-color; //llamada a la variable
+}
+
+
+#arsenal-local {
+background-image: url("../img/Arsenal_Home_1000x1000.png");
+background-color: $arsenal-color;
+
+}
+
+#arsenal-visit {
+    background-image: url("../img/Arsenal_Away_1000x1000.png");
+    background-color: $arsenal-color;
+    
+    }
+    
+    h2#aston {
+        color: $aston-color;
+    }
+    
+    
+    #aston-local {
+    background-image: url("../img/Aston_Villa_Home_1000x1000.png");
+    background-color: $aston-color;
+    
+    }
+    
+    #aston-visit {
+        background-image: url("../img/Aston_Villa_Away_1000x1000.png");
+        background-color: $aston-color;
+        
+        }
+
+        h2#burnley {
+            color: $burnley-color;
+        }
+        
+        
+        #burnley-local {
+        background-image: url("../img/Burnley_Home_1000x1000.png");
+        background-color: $burnley-color;
+        
+        }
+        
+        #burnley-visit {
+            background-image: url("../img/Burnley_Away_1000x1000.png");
+            background-color: $burnley-color;
+            
+            }
+    
