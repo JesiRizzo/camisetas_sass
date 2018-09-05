@@ -1,10 +1,10 @@
 @import "reboot";
 @import "font";
+@import "mixings";
+@import "variables";
 
-//variables
-$arsenal-color: #cd0c14;
-$aston-color:  #6b0019;
-$burnley-color:  #789ab2;
+
+
 
 
 
@@ -55,15 +55,12 @@ h2#arsenal {
 
 
 #arsenal-local {
-background-image: url("../img/Arsenal_Home_1000x1000.png");
-background-color: $arsenal-color;
+    @include camisetas-back("../img/Arsenal_Home_1000x1000.png", $arsenal-color)
 
 }
 
 #arsenal-visit {
-    background-image: url("../img/Arsenal_Away_1000x1000.png");
-    background-color: $arsenal-color;
-    
+    @include camisetas-back("../img/Arsenal_Away_1000x1000.png", $arsenal-color)
     }
     
     h2#aston {
@@ -72,14 +69,13 @@ background-color: $arsenal-color;
     
     
     #aston-local {
-    background-image: url("../img/Aston_Villa_Home_1000x1000.png");
-    background-color: $aston-color;
+        @include camisetas-back("../img/Aston_Villa_Home_1000x1000.png", $aston-color)
     
     }
     
     #aston-visit {
-        background-image: url("../img/Aston_Villa_Away_1000x1000.png");
-        background-color: $aston-color;
+
+        @include camisetas-back ("../img/Aston_Villa_Away_1000x1000.png", $aston-color)
         
         }
 
@@ -89,14 +85,14 @@ background-color: $arsenal-color;
         
         
         #burnley-local {
-        background-image: url("../img/Burnley_Home_1000x1000.png");
-        background-color: $burnley-color;
+        @include camisetas-back ("../img/Burnley_Home_1000x1000.png", $burnley-color)
         
         }
         
         #burnley-visit {
-            background-image: url("../img/Burnley_Away_1000x1000.png");
-            background-color: $burnley-color;
-            
+            @include camisetas-back ("../img/Burnley_Away_1000x1000.png", $burnley-color)
+
+
+    
             }
     
